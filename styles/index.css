@@ -1,0 +1,23 @@
+  
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+
+}
+
+/*start code here*/
+
+
+/*______________________________________________responsive info below
+/*
+360
+768
+1200
+
+
+@media only screen and (max-width: ????){
+
+}
+*/
