@@ -1,14 +1,14 @@
 
-//Side nav
+//Initialize side nav
 const sideNav = document.querySelector('.sidenav');
 M.Sidenav.init(sideNav,{});
 
 
-//Carousel
+//Initialize Carousel
 $(document).ready(function(){
-    var carousel_interval = 8000;
+    var carousel_interval = 6000;
 $('.carousel').carousel({
-    fullWidth: true
+    fullWidth: true,
 });
 
 setInterval(function(){
@@ -16,7 +16,8 @@ setInterval(function(){
 }, carousel_interval);
 });
 
-//Autocomplete
+
+//Initialize autocomplete
 const ac = document.querySelector('.autocomplete');
 M.Autocomplete.init(ac, {
     data: {
@@ -29,5 +30,17 @@ M.Autocomplete.init(ac, {
         "Switzerland": null,
         "Europe": null
     }
-
 });
+
+//Initialize datepicker
+  $(document).ready(function () {
+    $('.datepicker').pickadate({
+      closeOnSelect: true,
+      format: "dd/mm/yyyy"
+    });
+  });
+
+  
+//Initialize ScrollSpy (smooth scrolling)
+const ss = document.querySelectorAll('.scrollspy');
+M.Scrollspy.init(ss, {});
