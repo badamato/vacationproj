@@ -2,22 +2,43 @@
 html {
     box-sizing: border-box;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
-
 }
 
-/*start code here*/
-
-
-/*______________________________________________responsive info below
-/*
-360
-768
-1200
-
-
-@media only screen and (max-width: ????){
-
+body {
+    display: block;
+    height: auto;
+    background: #eeeeee;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
-*/
+
+.navbar-fixed {
+    position: absolute;
+    max-width: 900px;
+    z-index: 999999999;
+}
+
+.callout {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    z-index: 10;
+  }
+
+.section-search input {
+    padding: 5px !important;
+    font-size: 18px !important;
+    width: 90% !important;
+    border: 3px solid #f4f4f4;
+}
+
+.section-follow .fa-4x {
+    margin: 5px 10px;
+}
