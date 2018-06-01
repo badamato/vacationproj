@@ -1,23 +1,65 @@
-  
-html {
-    box-sizing: border-box;
+
+body {
+    display: block;
+    height: auto;
+    background: #eeeeee;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
 
+.navbar-fixed {
+    position: absolute;
+    max-width: 900px;
+    z-index: 999999999;
 }
 
-/*start code here*/
-
-
-/*______________________________________________responsive info below
-/*
-360
-768
-1200
-
-
-@media only screen and (max-width: ????){
-
+.callout {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 60%;
+    text-align: center;
+    z-index: 10;
 }
-*/
+
+.callout-container {
+    margin: 15% 0;
+    display: block;
+    /* padding: 200px; */
+}
+
+
+.container {
+    width: 100%;
+    max-width:initial;
+}
+
+.container > .row {
+    margin: 0;
+}
+
+.section-results {
+    padding: 0;
+    font-size: 18px ;
+    width: 100% ;
+    margin: 5px 10px;
+}
+
+
+.section-search input {
+    padding: 5px ;
+    font-size: 18px ;
+    width: 100% ;
+    border: 3px solid #f4f4f4;
+}
+
+.section-follow .fa-4x {
+    margin: 5px 10px;
+}
+
+.datepicker {
+    width: 30%;
+    border: 5px solid green;
+}
