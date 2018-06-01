@@ -40,7 +40,7 @@ M.Autocomplete.init(ac, {
     });
   });
 
-  
+
 //Initialize ScrollSpy (smooth scrolling)
 const ss = document.querySelectorAll('.scrollspy');
 M.Scrollspy.init(ss, {});
