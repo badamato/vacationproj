@@ -1,23 +1,10 @@
-  
-html {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-
+.section-search input {
+    padding: 5px !important;
+    font-size: 18px;
+    width: 90% !important;
+    border: #f4f4f4 3px solid !important;
 }
 
-/*start code here*/
-
-
-/*______________________________________________responsive info below
-/*
-360
-768
-1200
-
-
-@media only screen and (max-width: ????){
-
+.section-follow .fa-4x {
+    margin: 5px 10px;
 }
-*/
