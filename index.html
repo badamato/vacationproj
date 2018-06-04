@@ -1,26 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <!-- Google and FontAwesome -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- personal style file -->
+    <link rel="stylesheet" href="styles/index.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>Document</title>
+    <title>Shelterly</title>
 </head>
-<body>
+<body id="home" class="scrollspy">
+
+
+    <!-- Top nav bar - fixed -->
+    <div>
+        <nav class="navbar-fixed white">
+            <a href="#" class="company-name">Shelterly</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                <i class="fas fa-bars"></i></a>
+            <ul class="right hide-on-med-and-down top-menu">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#jump1">Search</a>
+                </li>
+                <li>
+                    <a href="#follow">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <!-- Side nav bar slider -->
+        <ul class="sidenav" id="mobile-nav">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#allResults">Search</a>
+            </li>
+            <li>
+                <a href="#follow">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+
+   
+
+    <!-- Section: carousel -->
+    <div class="carousel carousel-slider">
+
+        <a class="carousel-item" href="#one!"><img src="images/img01.jpg"></a>
+
+        <div class="callout callout-container white-text">
+            <h3>Where Do You Want To Stay?</h3>
+
+            <div class="input-field input-one">
+                <input type="text" class="white grey-text autocomplete" placeholder="Italy, Venice, Florence, etc...">
+            </div>
+
+            <div class="input-two">
+                <div class="input-field">
+                    <input type="text" class="datepicker white grey-text" placeholder="Arrival Date">
+                </div>
+                <div class="input-field">
+                    <input type="text" class="datepicker white grey-text" placeholder="Departure Date">
+                </div>
+            </div>
+
+            <div class="input-field input-three">
+                <input type="number" class="white grey-text" placeholder="# In Party">
+            </div>
+
+            <div class="input-four">
+                <a href="#results" class="btn z-depth-2 waves-effect waves-light orange">Let's Go</a>
+                <a href="" class="btn orange">Reset</a>
+            </div>
+
+        </div>
+
+        <a class="carousel-item" href="#two!"><img src="images/img02.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="images/img03.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="images/img04.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="images/img05.jpg"></a>
+        <a class="carousel-item" href="#six!"><img src="images/img06.jpg"></a>
+        <a class="carousel-item" href="#seven!"><img src="images/img07.jpg"></a>
+        <a class="carousel-item" href="#eight!"><img src="images/img08.jpg"></a>
+        <a class="carousel-item" href="#nine!"><img src="images/img09.jpg"></a>
+        <a class="carousel-item" href="#ten!"><img src="images/img10.jpg"></a>
+    </div>
+
+
+    <!-- Section:  Search -->
+    <!-- <section id="search" class="section section-search blue-grey darken-1 white-text center scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Search Destinations</h3>
+                    <div class="input-field">
+                        <input type="text" class="white grey-text autocomplete" id="autocomplete-input" placeholder="Italy, Venice, Florence, etc...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Section: Icon Boxes -->
+    <!-- <section class="section section-icons grey lighten-4 center">
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card-panel black-text">
+                    <i class="material-icons large blue-grey-text">room</i>
+                    <h4>Pick Where</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, esse?</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card-panel black-text">
+                    <i class="material-icons large blue-grey-text">store</i>
+                    <h4>Travel Shop</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, esse?</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card-panel black-text">
+                    <i class="material-icons large blue-grey-text">airplanemode_active</i>
+                    <h4>Fly Cheap</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, esse?</p>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+
+
+    <!-- Section: Data Results -->
+    <section class="section section-results scrollspy">
+
+        <div class="blue-grey darken-2 white-text center">
+            <div class="row">
+                <div class="results-header">
+                    <h4>SEARCH RESULTS</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4 l10">
+                    <div class="card-panel blue-grey white-text center">
+                        <h5>***PUT RESULTS HERE***</h5>
+                        <div class="results-container white grey-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore iusto sit similique aliquam sapiente aperiam laborum accusantium doloribus? Quibusdam voluptate labore ipsam veniam officia iusto libero aspernatur molestiae, aliquid dolor!
+                            Beatae obcaecati dolore quos! Dolores, minima. Ipsam, quasi. Repellendus earum explicabo voluptatum tenetur perspiciatis, fuga quo quos adipisci, eveniet necessitatibus cumque consectetur, quod vitae amet magnam enim illo in sapiente.
+                            Possimus nemo eaque consequatur unde! Culpa veniam ab facere sequi nulla! Alias voluptate praesentium modi neque obcaecati unde necessitatibus illum voluptas nulla, aperiam repudiandae, facilis, distinctio ad consequuntur in beatae!
+                            Voluptatem, dignissimos error? Et pariatur, vero minus est ex, deserunt dolore ea illo, cum accusamus iusto qui atque tempora eos libero explicabo quod repellendus fuga. Minus rerum doloribus odio tempore.
+                            Optio voluptatum similique consequuntur vero doloribus nobis nisi iste voluptatibus cumque magnam sint suscipit, cum recusandae esse. Minima aliquid numquam autem saepe eius, amet velit eligendi adipisci. Labore, expedita minus!
+                            Ea nam consectetur repellendus quaerat, nulla sapiente minima est officiis, iste ipsa asperiores. Natus at, cupiditate quam architecto dolor assumenda, maiores aut vel aliquam laboriosam, facilis libero porro tempora. Quos.
+                            Pariatur, et tenetur. Nisi laudantium maiores repudiandae, harum tempora possimus itaque. Quod, enim illum! Tempore architecto illum accusamus dignissimos tenetur laudantium rem dolorum illo a unde consequatur facere, eveniet repudiandae?
+                            Delectus quibusdam amet ullam libero in suscipit dolorem dolore consectetur incidunt, fugit harum cumque quia ut quae tenetur alias quod adipisci, fuga a ipsum, vero deserunt iste vitae. Harum, ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos facere eveniet eaque sapiente culpa ipsa, illum perspiciatis ipsum quis, nulla cupiditate rerum fugit facilis sed, praesentium quidem placeat ab saepe.
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l2">
+                    <div class="card-panel grey lighten-3">
+                        <div class="map-container white grey-text">
+                            <h5>***MAP***</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex omnis suscipit animi reprehenderit quisquam soluta deleniti, iure laudantium quaerat ducimus sequi sapiente tempore ea? Fugit, dolorum. Veritatis sint corporis repudiandae!
+                            Quam vitae sed deleniti placeat error deserunt assumenda corporis, odio odit eaque suscipit totam perspiciatis necessitatibus dolores temporibus ex sunt perferendis quod aperiam, voluptas iste omnis ut excepturi dignissimos. Voluptas!
+                            Laboriosam minima, optio eius saepe, iure atque necessitatibus tempora dolorem ratione hic soluta quia modi vitae quam numquam, quo sed ut voluptate voluptatum cupiditate temporibus quas voluptatibus. Dolores, recusandae ipsa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section:  Popular Places -->
+    <!-- <section id="popular" class="section section-popular scrollspy">
+        <div class="container">
+                <h4 class="center above">
+                    <span class="blue-grey-text">Popular</span>
+                    Places</h4>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/img01.jpg" alt="">
+                            <span class="card-title">Venice, Italy</span>
+                        </div>
+                        <div class="card-content black-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae sapiente, dolores laborum molestiae omnis?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/img02.jpg" alt="">
+                            <span class="card-title">Nova Scotia, Canada</span>
+                        </div>
+                        <div class="card-content black-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae sapiente, dolores laborum molestiae omnis?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/img03.jpg" alt="">
+                            <span class="card-title">Paola, Kansas</span>
+                        </div>
+                        <div class="card-content black-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae sapiente, dolores laborum molestiae omnis?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Section: Follow -->
+    <a name="follow">
+        <section class="section section-follow blue-grey darken-2 white-text center">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h4>Follow Shelterly</h4>
+                        <p>Follow us on social media!</p>
+                        <a href="#" class="white-text">
+                            <i class="fab fa-github fa-4x"></i>
+                        </a>
+                        <a href="#" class="white-text">
+                            <i class="fab fa-linkedin fa-4x"></i>
+                        </a>
+                        <a href="#" class="white-text">
+                            <i class="fab fa-youtube fa-4x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
     
 
+        <!-- Section: Contact -->
+        <section class="section section-contact scrollspy">
+            <div class="container">
+                <div class="row">
+                    <div class="about-us">
+                        <div class="card-panel white left black-text">
+                            <h5>*****ABOUT US*****</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ullam ipsa, animi recusandae, provident molestiae iste perspiciatis ex voluptate voluptatibus veritatis, pariatur ut quibusdam magni earum dolores temporibus dolor minima!
+                            Libero enim temporibus minima neque ipsum quidem earum iure mollitia. Illo eveniet fugit itaque, beatae deserunt soluta vel fugiat rem dolorem assumenda ab minus, recusandae quis explicabo velit incidunt quae.
+                            Eaque dolore beatae eius laborum assumenda natus officiis molestias neque velit, earum, architecto est aspernatur iusto repellendus voluptatem soluta illum doloremque tenetur quibusdam expedita dicta in asperiores labore inventore. Voluptatibus?
+                            A exercitationem eligendi quisquam corrupti labore quia beatae magni aliquam amet vero blanditiis dolores quam deserunt perspiciatis temporibus, voluptas nihil iusto nostrum odio nam provident ipsum ab porro? Non, fuga.
+                            Excepturi facere sint, omnis provident officia, delectus quae voluptates voluptatibus similique qui optio repellendus accusamus, dicta consequatur quas! Ipsam vel corporis quam, harum nisi architecto consectetur illo? Consectetur, repudiandae dignissimos.
+                            Tenetur numquam rem culpa itaque suscipit consequuntur? Pariatur sequi dolor saepe debitis voluptatibus, quos consequatur quod quidem consectetur magni eos minus maxime inventore veniam, totam ducimus ab, officiis accusamus quam?
+                            Magnam reiciendis tempore nihil, voluptatibus harum non fuga vitae soluta repellat illo eos aut ratione porro debitis doloribus eveniet temporibus vero adipisci molestias ipsam aliquid! Odio perferendis ea vero at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa totam facilis at maiores cupiditate, quod expedita dolor illo laboriosam vel, </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta sit, voluptatibus facere ad labore quisquam odit ratione ipsam corporis itaque ullam atque aut fugit consequuntur omnis accusamus autem cum expedita!
+                            Incidunt, numquam veniam! Aliquid nisi impedit sapiente aliquam voluptatum, perferendis, temporibus laborum animi nihil porro aperiam saepe dolor ut fugiat necessitatibus. Nam magni veniam tempore vitae rerum saepe nulla a.
+                            Facilis, sequi rerum? Expedita facilis consectetur est quo hic? Quaerat corrupti qui corporis asperiores eos ducimus tempora ea similique neque? Ea perspiciatis suscipit quasi harum tempore adipisci voluptatum non reiciendis.
+                            Soluta in sint fuga cupiditate mollitia illum eos aliquam recusandae ipsam labore assumenda quo, odio sapiente excepturi corporis minima est, numquam culpa vero fugit blanditiis? Sunt maiores distinctio voluptatibus molestiae!
+                            Minima sunt officiis, dicta exercitationem doloribus, dignissimos totam voluptas, iure qui quisquam autem quae a tempora tenetur iusto soluta aut quaerat iste ducimus! Fuga odio aspernatur distinctio eveniet optio quisquam!</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="card-panel right blue-grey white-text">
+                            <h5>Contact us with questions/feedback</h5>
+                            <div class="input-field">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="input-field">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="input-field">
+                                <input type="text" placeholder="Phone">
+                            </div>
+                            <div class="input-field">
+                                <textarea class="materialize-textarea" placeholder="Enter Message"></textarea>
+                            </div>
+                            <input class="white text-blue-grey" type="submit" value="Submit" class="btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </a>
+
+
+
+<!-- Section: Footer -->
+    <footer class="white">
+        <h6>&copy; 2018 developed by Bhisma Bakhai, Beth D'Amato, Matt Freeman - DigitalCrafts</h6>
+    </footer>
 
 
 
 
-
-
-    
+<!-- JQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Materialize -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<!-- personal script file -->
 <script src="scripts/index.js"></script>    
 </body>
 </html>
