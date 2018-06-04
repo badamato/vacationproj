@@ -56,8 +56,10 @@ nav ul li a:hover {
 }
 
 .callout-container {
-    margin: 15% 0;
+    margin: 10% 0;
+    Width: 100%;
     display: block;
+    align-content: center;
 }
 
 .callout-container h3 {
@@ -69,7 +71,6 @@ nav ul li a:hover {
 
 .carousel .carousel-item>img {
     width: 100%;
-    height: 750px;
 }
 
 .input-one {
@@ -90,17 +91,6 @@ nav ul li a:hover {
     display: inline-block;
 }
 
-.picker__date-display {
-    background-color: rgb(97, 125, 138)
-}
-
-.picker__weekday-display {
-    background-color: rgb(136, 159, 170)
-}
-.picker__day--selected, .picker__day--selected:hover, .picker--focused.picker__day--selected {
-    background-color: rgb(97, 125, 138)
-}
-
 .input-three {
     width: 100px;
     margin: 20px auto;
@@ -116,12 +106,12 @@ nav ul li a:hover {
     width: 100%;
 }
 
-.results-header {
+/* .results-header {
     width: 100%;
     margin: 0;
-    height: 60px;
     padding-top: 10px;
-}
+    position: absolute;
+} */
 
 .section-contact {
     width: 100%;
