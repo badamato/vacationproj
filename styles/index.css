@@ -166,8 +166,20 @@ nav ul li a:hover {
 }
 
 .about-us {
-    width: 800px;
-    padding-right: 30px;
+    width: 100%;
+    /* padding-right: 30px; */
+}
+
+.about-us {
+    text-align: center;
+    /* width: 100%; */
+}
+ 
+.about-us img {
+    vertical-align: middle;
+}
+ .materialboxed {
+    display: inline;
 }
 
 footer {
@@ -182,3 +194,7 @@ footer h6 {
     padding-top: 5px;
     color: orange;
 }
+
+.contact-card {
+    width: 100%;
+ }
