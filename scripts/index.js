@@ -172,3 +172,11 @@ M.Autocomplete.init(ac, {
 //Initialize ScrollSpy (smooth scrolling)
 const ss = document.querySelectorAll('.scrollspy');
 M.Scrollspy.init(ss, {});
+
+var map;
+      function initMap() {
+        map = new google.maps.Map(document.querySelector('[data-map]'), {
+          center: {lat: Number(lat), lng: Number(lon)},
+          zoom: 8
+        });
+    };
