@@ -7,7 +7,7 @@ var url3 = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD5UbM4IbCBvcnvGdbd
 var key1 = '8af75be6ad056fda7f74ba7bb0a3e7a1';
 var key2 = 'LMXWGlJ5iEiMnGPICR4nrPHFNFz81uBC';
 var key3 = 'AIzaSyD5UbM4IbCBvcnvGdbdBZOOjkEEfxpNgYg';
-var submitButton = document.getElementById('view-input');
+var submitButton = document.querySelector('[data-submit]');
 //Establish variables from input of form in html
 var lon;//necessary to call for second api
 var lat;//necessary to call for second api
@@ -18,7 +18,6 @@ var hotelDescription;
 var hotelAddress;
 
 function main() {
-    
     var cityName = document.querySelector('[data-cityName]').value;
     var startDate = document.querySelector('[data-startDate]').value;
     var endDate = document.querySelector('[data-endDate]').value;
@@ -91,7 +90,8 @@ function main() {
         //use address location to place pin on map
 };
 
-submitButton.addEventListener('click', function (click) {
+submitButton.addEventListener('click', function (event) {
+    event.preventDefault();
     return main();
 });
 //Initialize side nav
