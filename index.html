@@ -21,29 +21,12 @@
 </head>
 <body id="home" class="scrollspy">
 
-
     <!-- Top nav bar - fixed -->
-    <div>
-        <nav class="navbar-fixed white">
-            <a href="#" class="company-name"><i class="fas fa-bed"></i>Shelterly</a>
-            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-                <i class="fas fa-bars"></i></a>
-            <ul class="right hide-on-med-and-down top-menu">
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#search">Search</a>
-                </li>
-                <li>
-                    <a href="#follow">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
-
-        <!-- Side nav bar slider -->
-        <ul class="sidenav" id="mobile-nav">
+    <nav class="navbar-fixed white">
+        <a href="#" class="company-name"><img src="images/logo.jpg" alt=""></a>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="fas fa-bars"></i></a>
+        <ul class="right hide-on-med-and-down top-menu">
             <li>
                 <a href="#home">Home</a>
             </li>
@@ -51,12 +34,23 @@
                 <a href="#search">Search</a>
             </li>
             <li>
-                <a href="#follow">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
-    </div>
+    </nav>
 
-
+    <!-- Side nav bar slider -->
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#search">Search</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
    
 
     <!-- Section: carousel -->
@@ -64,7 +58,7 @@
 
         <a class="carousel-item" href="#one!"><img src="images/img01a.jpg"></a>
         <div class="callout orange-text">
-            <h3>Where Do You Want To Stay?</h3>
+                <div id="home"><h3>Where Do You Want To Stay?</h3></div>
 
             <div class="input-field input-one">
                 <input type="text" class="white grey-text autocomplete" placeholder="Italy, Venice, Florence, etc..." data-cityName>
@@ -144,25 +138,36 @@
 
 
 
-    <!-- Section: Data Results -->
-        <div class="blue-grey darken-2 white-text center">
+        <!-- Section: Data Results -->
+        <!-- <div class="blue-grey darken-2 white-text center">
             <div class="results-header">
                 <h4>SEARCH RESULTS</h4>
             </div>
-        </div>
+        </div> -->
 
-    <section class="section section-results scrollspy">
-        <div class="results-container card-panel blue-grey white-text center">
-            <div class="results-card white grey-text" data-results>
-                <h5>***API RESULTS***</h5>
+
+        <section class="section section-results scrollspy col s12">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col s12 m4 l2">
+                        <div class="results-container card-panel left blue-grey white-text center">
+                            <div class="results-card white grey-text" data-results>
+                                <h5>***API RESULTS***</h5>
+                            </div>
+                        </div>
+                    </div>    
+
+                    <div class="col s12 m4 l2">
+                        <div class="map-container card-panel right grey lighten-3">
+                            <div class="map-card white grey-text" data-map>
+                                <h5>***MAP***</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
             </div>
-        </div>
-        <div class="map-container card-panel grey lighten-3">
-            <div class="map-card white grey-text" data-map>
-                <h5>***MAP***</h5>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
     <!-- Section:  Popular Places -->
@@ -211,26 +216,26 @@
         </div>
     </section> -->
 
-    <!-- Section: Follow -->
-    <section class="section section-follow blue-grey darken-2 white-text center">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h4>Follow Shelterly</h4>
-                    <p>Follow us on social media!</p>
-                    <a href="#" class="white-text">
-                        <i class="fab fa-github fa-4x"></i>
-                    </a>
-                    <a href="#" class="white-text">
-                        <i class="fab fa-linkedin fa-4x"></i>
-                    </a>
-                    <a href="#" class="white-text">
-                        <i class="fab fa-youtube fa-4x"></i>
-                    </a>
+    <!-- Section: Follow -->  
+        <section class="section section-follow blue-grey darken-2 white-text center">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h4>Follow Odmor</h4>
+                        <p>Follow us on social media!</p>
+                        <a href="#" class="white-text">
+                            <i class="fab fa-github fa-4x"></i>
+                        </a>
+                        <a href="#" class="white-text">
+                            <i class="fab fa-linkedin fa-4x"></i>
+                        </a>
+                        <a href="#" class="white-text">
+                            <i class="fab fa-youtube fa-4x"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <!-- Section: Contact -->
     <section class="section section-contact scrollspy">
@@ -268,7 +273,6 @@
                         </a>
                     </div>
                 </div>
-
                 <div class="contact-card">
                     <div class="card-panel center blue-grey white-text">
                         <h5>Contact us with questions/feedback</h5>
@@ -290,11 +294,10 @@
             </div>
         </div>
     </section>
-    
 
     <!-- Section: Footer -->
     <footer class="white">
-        <h6>&copy; 2018 developed by Bhisma Bakhai, Beth D'Amato, Matt Freeman - DigitalCrafts</h6>
+        <h6>Odmor&copy; 2018 developed by Bhisma Bakhai, Beth D'Amato, Matt Freeman - DigitalCrafts</h6>
     </footer>
 
 
