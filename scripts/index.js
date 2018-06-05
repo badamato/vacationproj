@@ -16,8 +16,15 @@ var hotelName;
 var hotelAmenities;
 var hotelDescription;
 var hotelAddress;
-
 function main() {
+    // if(true){
+    //         // $('[data-cityName]').val('atlanta');
+    //         // $('[data-startDate]').val('2018-06-05');
+    //         // $('[data-endDate]').val('2018-06-05');
+    //         $('[data-cityName]').val('atlanta');
+    //         $('[data-startDate]').val('2018-06-05');
+    //         $('[data-endDate]').val('2018-06-05');
+    //     }
     var cityName = document.querySelector('[data-cityName]').value;
     var startDate = document.querySelector('[data-startDate]').value;
     var endDate = document.querySelector('[data-endDate]').value;
@@ -60,6 +67,7 @@ function main() {
                 });
                 console.log(keys);
                 console.log(hotelData);
+                initMap(lat, lon);
                 //loop through data from amadeus and place in vars
                 hotelData.forEach(function (info) {
                     //nest a for loop in here
@@ -81,7 +89,6 @@ function main() {
                         listOfHotels.append(listedDetail3);
                         console.log(listOfHotels);
                         listOfHotels.appendTo('[data-results]');//no clue why this works
-
                     };
                 });
             })
@@ -89,7 +96,6 @@ function main() {
         })
         //use address location to place pin on map
 };
-
 submitButton.addEventListener('click', function (event) {
     event.preventDefault();
     return main();
@@ -97,7 +103,6 @@ submitButton.addEventListener('click', function (event) {
 //Initialize side nav
 const sideNav = document.querySelector('.sidenav');
 M.Sidenav.init(sideNav,{});
-
 // function formSubmit() {
 // var openWeather = {}
 // var amadues = {}
@@ -112,10 +117,8 @@ M.Sidenav.init(sideNav,{});
 // // do stuff with data
 // // return google maps async function
 // // 3rd .then
-
 // var param = $.serialize(form)
 // var url = baseUrl +  param
-
 // function async(url, callback) {
 //     console.log('Hello form async!')
 //     callback()
@@ -127,24 +130,17 @@ M.Sidenav.init(sideNav,{});
 //     .then()
 //     .then()
 //     .catch()
-
 // }
-
-
-
 //Initialize Carousel
 $(document).ready(function(){
     var carousel_interval = 6000;
 $('.carousel').carousel({
     fullWidth: true,
 });
-
 setInterval(function(){
     $('.carousel').carousel('next');
 }, carousel_interval);
 });
-
-
 //Initialize autocomplete
 const ac = document.querySelector('.autocomplete');
 M.Autocomplete.init(ac, {
@@ -159,7 +155,6 @@ M.Autocomplete.init(ac, {
         "Europe": null
     }
 });
-
 //Initialize datepicker
   $(document).ready(function () {
     $('.datepicker').pickadate({
@@ -167,11 +162,13 @@ M.Autocomplete.init(ac, {
       format: "dd/mm/yyyy"
     });
   });
-
-
 //Initialize ScrollSpy (smooth scrolling)
 const ss = document.querySelectorAll('.scrollspy');
 M.Scrollspy.init(ss, {});
-
-
-//Page jump top nav
+var map;
+      function initMap(lat, lon) {
+        map = new google.maps.Map(document.querySelector('[data-map]'), {
+          center: {lat: lat, lng: lon},
+          zoom: 8
+        });
+    };
