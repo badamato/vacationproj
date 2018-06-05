@@ -55,3 +55,6 @@ $(document).ready(function(){
 //Initialize ScrollSpy (smooth scrolling)
 const ss = document.querySelectorAll('.scrollspy');
 M.Scrollspy.init(ss, {});
+
+
+//Page jump top nav
