@@ -20,18 +20,19 @@
     <title>Shelterly</title>
 </head>
 <body id="home" class="scrollspy">
-
+<span id="top"></span>
     <!-- Top nav bar - fixed -->
+    <div>
     <nav class="navbar-fixed white">
-        <a href="#" class="company-name"><img src="images/logo.jpg" alt=""></a>
+        <a href="#top" class="company-name"><img src="images/logo.jpg" alt="Odmor"></a>
         <a href="#" data-target="mobile-nav" class="sidenav-trigger">
             <i class="fas fa-bars"></i></a>
         <ul class="right hide-on-med-and-down top-menu">
             <li>
-                <a href="#home">Home</a>
+                <a href="#search">Search</a>
             </li>
             <li>
-                <a href="#search">Search</a>
+                <a href="#about">About</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
@@ -42,22 +43,23 @@
     <!-- Side nav bar slider -->
     <ul class="sidenav" id="mobile-nav">
         <li>
-            <a href="#home">Home</a>
+            <a href="#search">Search</a>
         </li>
         <li>
-            <a href="#search">Search</a>
+            <a href="#about">About</a>
         </li>
         <li>
             <a href="#contact">Contact</a>
         </li>
     </ul>
-   
+</div>
 
     <!-- Section: carousel -->
-    <div id="carousel" class="carousel carousel-slider">
+    <div class="carousel carousel-slider"><a name="home">
 
         <a class="carousel-item" href="#one!"><img src="images/img01a.jpg"></a>
-        <div class="callout orange-text">
+        
+        <div class="callout callout-container orange-text">
                 <div id="home"><h3>Where Do You Want To Stay?</h3></div>
 
             <div class="input-field input-one">
@@ -146,26 +148,35 @@
         </div> -->
 
 
-        <section class="section section-results scrollspy col s12">
-            <div class="container">
-                
-                <div class="row">
-                    <div class="col s12 m4 l2">
-                        <div class="results-container card-panel left blue-grey white-text center">
-                            <div class="results-card white grey-text" data-results>
-                                <h5>***API RESULTS***</h5>
-                            </div>
-                        </div>
-                    </div>    
+        <section class="section section-results scrollspy">
 
-                    <div class="col s12 m4 l2">
-                        <div class="map-container card-panel right grey lighten-3">
-                            <div class="map-card white grey-text" data-map>
-                                <h5>***MAP***</h5>
+            <div class="blue-grey darken-2 white-text center">
+                <div class="row ">
+                    <div class"results-header"><a name="search">
+                        <br>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container">
+                <div class="row">
+
+                    <div class="col s12 m4 l10">
+                        <div class="card-panel blue-grey white-text center" data-results>
+                            <h5>Search Results</h5>
+                            <hr>
+                            <div class="results-container white grey-text">
                             </div>
                         </div>
                     </div>
-                </div>    
+                    <div class="col s12 m4 l2">
+                        <div class="map-container card-panel grey lighten-3">
+                            <div class="map-card white grey-text" data-map>
+                                <h5>Map</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -217,25 +228,14 @@
     </section> -->
 
     <!-- Section: Follow -->  
-        <section class="section section-follow blue-grey darken-2 white-text center">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <h4>Follow Odmor</h4>
-                        <p>Follow us on social media!</p>
-                        <a href="#" class="white-text">
-                            <i class="fab fa-github fa-4x"></i>
-                        </a>
-                        <a href="#" class="white-text">
-                            <i class="fab fa-linkedin fa-4x"></i>
-                        </a>
-                        <a href="#" class="white-text">
-                            <i class="fab fa-youtube fa-4x"></i>
-                        </a>
-                    </div>
+    <section class="section section-follow blue-grey darken-2 white-text center">
+        <div class="container"><a name="about">
+            <div class="row">
+                <div class="col s12">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <!-- Section: Contact -->
     <section class="section section-contact scrollspy">
@@ -247,33 +247,33 @@
                         <hr>
                         <img class="materialboxed circle" width="300" src="https://media.licdn.com/dms/image/C4E03AQEzTm-eDRUp_A/profile-displayphoto-shrink_800_800/0?e=1533772800&v=beta&t=YVCmoxAHbhKOWTP4i7lJRlbtZlz48PtqhpCdbBLAmA8">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quos quis hic ipsam doloremque fuga dolorem consequatur rerum qui. Sed.</p>
-                        <a href="#" class="black-text">
+                        <a href="https://github.com/matthewfreeman821" class="black-text">
                                 <i class="fab fa-github fa-4x"></i>
                         </a>
-                        <a href="#" class="black-text">
+                        <a href="https://www.linkedin.com/in/matthewfreeman821" class="black-text">
                             <i class="fab fa-linkedin fa-4x"></i>
                         </a>
                         <hr>
                         <img class="materialboxed circle" width="300" src="https://static.wixstatic.com/media/098b8c_5cbd555e612c4ea599fe52da5b66f7c8.jpg/v1/fill/w_334,h_353,al_c,q_80,usm_0.66_1.00_0.01/098b8c_5cbd555e612c4ea599fe52da5b66f7c8.webp">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quos quis hic ipsam doloremque fuga dolorem consequatur rerum qui. Sed.</p>
-                        <a href="#" class="black-text">
+                        <a href="https://github.com/badamato" class="black-text">
                                 <i class="fab fa-github fa-4x"></i>
                         </a>
-                        <a href="#" class="black-text">
+                        <a href="https://www.linkedin.com/in/badamato" class="black-text">
                             <i class="fab fa-linkedin fa-4x"></i>
                         </a>
                         <hr>
                         <img class="materialboxed circle" width="300" src="https://media.licdn.com/dms/image/C5603AQGgQwjJuQUA9A/profile-displayphoto-shrink_200_200/0?e=1533772800&v=beta&t=IKMg7Ls0lTbP7cgQS82nOt3jaXtjxZfz_m2a20RGf24">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quos quis hic ipsam doloremque fuga dolorem consequatur rerum qui. Sed.</p>
-                        <a href="#" class="black-text">
+                        <a href="https://github.com/Bhisma93" class="black-text">
                                 <i class="fab fa-github fa-4x"></i>
                         </a>
-                        <a href="#" class="black-text">
+                        <a href="https://www.linkedin.com/in/bhismabakhai/" class="black-text">
                             <i class="fab fa-linkedin fa-4x"></i>
                         </a>
                     </div>
                 </div>
-                <div class="contact-card">
+                <div class="contact-card"><a name="contact">
                     <div class="card-panel center blue-grey white-text">
                         <h5>Contact us with questions/feedback</h5>
                         <div class="input-field">
@@ -307,7 +307,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5UbM4IbCBvcnvGdbdBZOOjkEEfxpNgYg&callback=initMap" async defer></script>
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5UbM4IbCBvcnvGdbdBZOOjkEEfxpNgYg" async defer></script>
     <!-- personal script file -->
     <script src="scripts/index.js"></script>    
 </body>
