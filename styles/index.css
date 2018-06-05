@@ -130,15 +130,6 @@ nav ul li a:hover {
     margin: 5px 10px;
 }
 
-.contact-card {
-    width: 400px;
-}
-
-.about-us {
-    width: 800px;
-    padding-right: 30px;
-}
-
 footer {
     position:fixed;
     bottom:0;
@@ -153,6 +144,7 @@ footer h6 {
 }
 
 .about-us {
+    padding-right: 30px;
     text-align: center;
     width: 100%;
 }
@@ -160,7 +152,12 @@ footer h6 {
 .about-us img {
     vertical-align: middle;
 }
+
 .materialboxed {
     display: inline;
+}
+
+.contact-card {
+    width: 98%;
 }
 
