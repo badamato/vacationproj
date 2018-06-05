@@ -174,4 +174,10 @@ const ss = document.querySelectorAll('.scrollspy');
 M.Scrollspy.init(ss, {});
 
 
-//Page jump top nav
+var map;
+      function initMap() {
+        map = new google.maps.Map(document.querySelector('[data-map]'), {
+          center: {lat: Number(lat), lng: Number(lon)},
+          zoom: 8
+        });
+    };
