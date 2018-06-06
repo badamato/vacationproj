@@ -1,4 +1,4 @@
-# vacationproj
+# Odmor Travel Application
 DC Group Project #1 - June 6, 2018
 
 ## Authors
