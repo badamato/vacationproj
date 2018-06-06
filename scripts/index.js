@@ -76,6 +76,7 @@ function main() {
                         hotelDescription = hotelData[0][i].rooms[0].descriptions;
                         hotelAddress = hotelData[0][i].address;
                         hotelAmenities = hotelData[0][i].amenities;
+                        var hotelPrice = hotelData[0][i].total_price;
                         
                         //push into list in html and display on page
                         var resultBox = document.querySelector('[data-results]');
@@ -83,10 +84,12 @@ function main() {
                         var listedDetail1 = $('<li>', {text: `${hotelName}`});//creates a listed item to put into the ul
                         var listedDetail2 = $('<li>', {text: `${hotelDescription}`});
                         var listedDetail3 = $('<li>', {text: `${hotelAddress.line1} ${hotelAddress.city}, ${hotelAddress.region} ${hotelAddress.postal_code}`});
+                        var listedDetail4 = $('<li>', {text: `$ ${hotelPrice.amount} Dollars`});
                         
                         listOfHotels.append(listedDetail1);//puts li's into ul
                         listOfHotels.append(listedDetail2);
                         listOfHotels.append(listedDetail3);
+                        listOfHotels.append(listedDetail4);
                         console.log(listOfHotels);
                         listOfHotels.appendTo('[data-results]');//no clue why this works
                     };
